@@ -1,7 +1,6 @@
 const cartWrapper=document.querySelector('.cart-wrapper');
 toggleCartStatus();
 document.addEventListener('click',function(e){
-    
     let productInfo;
     if(e.target.hasAttribute('data-cart')){
         
@@ -55,9 +54,7 @@ document.addEventListener('click',function(e){
     </div>
 </div>`;
         cartWrapper.insertAdjacentHTML('beforeend',cartItemHTML);
-       
         card.querySelector('[data-counter]').innerText='1';
-        
     }
     }
     toggleCartStatus();
